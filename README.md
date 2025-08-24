@@ -20,7 +20,7 @@ A responsive and modern **Currency Converter** web app built using **HTML**, **C
 
 > You can deploy it on GitHub Pages, Vercel, or Netlify and link it here:
 
-**🔗 Live URL:** [https://yourusername.github.io/currency-converter](#)
+**🔗 Live URL:** [[](https://vgvvlsacurrencyconvt.netlify.app/)](#)
 
 ---
 
