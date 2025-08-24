@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="particles-js"></div> <!-- ✨ Particle Background -->
+
+    <div class="container">
+      <h1>💱 Currency Converter</h1>
+
+      <form id="converter-form">
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="Enter amount" required />
+        </div>
+
+        <div class="form-group">
+          <label for="from-currency">From</label>
+          <select id="from-currency"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="to-currency">To</label>
+          <select id="to-currency"></select>
+        </div>
+
+        <button type="submit">🔁 Convert</button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+    <!-- 🌐 Footer Section -->
+    <footer class="footer">
+      <p>© Gnanna Veera • 2025</p>
+    </footer>
+
+    <!-- 🌟 Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Particles Config -->
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 60 },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.15 },
+          size: { value: 3 },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.1,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 1.5
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" }
+          }
+        },
+        retina_detect: true
+      });
+    </script>
+  </body>
+</html>
